@@ -21,7 +21,77 @@ h6 {
   margin: 0;
 }
 
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.container-fluid {
+  background: url("../../images/Home_01.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 1170px;
+  padding: 0;
+}
+
+.header {
+  padding-top: 30px;
+}
+
+.header .header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header .header__menu {
+  list-style-type: none;
+}
+
+.header .header__menu .header__menu__item {
+  padding: 0 15px;
+}
+
+.header .header__menu .header__menu__item a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat";
+}
+
+.intro {
+  text-align: center;
+  height: 700px;
+}
+
+.intro .intro__title {
+  font-size: 48px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.intro .intro_subtitle {
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.intro .intro__pseudoButton {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 36px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+.intro .intro__pseudoButton:hover {
+  background-color: #ffffff;
+  color: #c0301c;
 }
 /*# sourceMappingURL=style.css.map */

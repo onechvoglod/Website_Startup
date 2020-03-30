@@ -1,5 +1,62 @@
 @import "main";
 
+$header__inner-color: #fff;
+
+.container-fluid {
+  background: url("../../images/Home_01.jpg") center no-repeat;
+  background-size: cover;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: 1170px;
+  padding: 0;
+}
+
+.header {
+  padding-top: 30px;
+  .header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: $header__inner-color;
+  }
+  .header__menu {
+    list-style-type: none;
+    .header__menu__item {
+      padding: 0 15px;
+      a {
+        text-decoration: none;
+        color: $header__inner-color;
+        font-family: "Montserrat";
+      }
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+  height: 700px;
+  .intro__title {
+    font-size: 48px;
+    color: $header__inner-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .intro_subtitle {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    color: $header__inner-color;
+    margin-bottom: 50px;
+  }
+  .intro__pseudoButton {
+    font-size: 16px;
+    color: $header__inner-color;
+    text-transform: uppercase;
+    padding: 12px 36px;
+    border: 2px solid $header__inner-color;
+    border-radius: 3px;
+  }
+  .intro__pseudoButton:hover {
+    background-color: #ffffff;
+    color: #c0301c;
+  }
 }
