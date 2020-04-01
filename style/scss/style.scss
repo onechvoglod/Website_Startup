@@ -1,6 +1,7 @@
 @import "main";
 
-$header__inner-color: #fff;
+$header__intro__color: #ffffff;
+$main__color: #555555;
 
 .container-fluid {
   background: url("../../images/Home_01.jpg") center no-repeat;
@@ -17,7 +18,7 @@ $header__inner-color: #fff;
   .header__logo {
     font-size: 24px;
     font-weight: 700;
-    color: $header__inner-color;
+    color: $header__intro__color;
   }
   .header__menu {
     list-style-type: none;
@@ -25,7 +26,7 @@ $header__inner-color: #fff;
       padding: 0 15px;
       a {
         text-decoration: none;
-        color: $header__inner-color;
+        color: $header__intro__color;
         font-family: "Montserrat" sans-serif;
       }
     }
@@ -35,24 +36,22 @@ $header__inner-color: #fff;
 .intro {
   text-align: center;
   height: 700px;
+  color: $header__intro__color;
   .intro__title {
     font-size: 48px;
-    color: $header__inner-color;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
   .intro_subtitle {
     font-family: "Roboto Slab";
     font-size: 20px;
-    color: $header__inner-color;
     margin-bottom: 50px;
   }
   .intro__pseudoButton {
     font-size: 16px;
-    color: $header__inner-color;
     text-transform: uppercase;
     padding: 12px 36px;
-    border: 2px solid $header__inner-color;
+    border: 2px solid $header__intro__color;
     border-radius: 3px;
   }
   .intro__pseudoButton:hover {
@@ -61,29 +60,42 @@ $header__inner-color: #fff;
   }
 }
 
-.section__header {
-  margin-top: 100px;
-  text-align: center;
-  .section__header__title {
-    font-family: "Montserrat" sans-serif;
-    font-size: 20px;
-    color: #555555;
-    text-transform: uppercase;
+.service {
+  color: $main__color;
+  .service__header {
+    margin-top: 100px;
+    text-align: center;
+    .service__header__title {
+      font-family: "Montserrat" sans-serif;
+      font-size: 20px;
+      // color: #555555;
+      text-transform: uppercase;
+    }
+    .service__header__title:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      margin: 30px auto;
+      background-color: #555555;
+    }
+    .service__header__subTitle {
+      font-family: "Roboto Slab" sans-serif;
+      font-size: 16px;
+    }
   }
-  .section__header__title:after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 3px;
-    margin: 30px auto;
-    background-color: #555555;
+  .service__content {
+    margin-top: 72px;
+    .service__content__item {
+      display: block;
+      max-width: 366px;
+      width: 100%;
+      text-align: center;
+      font-family: "Roboto Slab" sans-serif;
+      font-size: 14px;
+      h4 {
+        margin: 28px 0;
+      }
+    }
   }
-  .section__header__subTitle {
-    font-family: "Roboto Slab" sans-serif;
-    font-size: 16px;
-  }
-}
-
-.section__service {
-  margin-top: 72px;
 }

@@ -45,7 +45,7 @@ li {
 .header .header__logo {
   font-size: 24px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
 }
 
 .header .header__menu {
@@ -58,18 +58,18 @@ li {
 
 .header .header__menu .header__menu__item a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-family: "Montserrat" sans-serif;
 }
 
 .intro {
   text-align: center;
   height: 700px;
+  color: #ffffff;
 }
 
 .intro .intro__title {
   font-size: 48px;
-  color: #fff;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -77,16 +77,14 @@ li {
 .intro .intro_subtitle {
   font-family: "Roboto Slab";
   font-size: 20px;
-  color: #fff;
   margin-bottom: 50px;
 }
 
 .intro .intro__pseudoButton {
   font-size: 16px;
-  color: #fff;
   text-transform: uppercase;
   padding: 12px 36px;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   border-radius: 3px;
 }
 
@@ -95,19 +93,22 @@ li {
   color: #c0301c;
 }
 
-.section__header {
+.service {
+  color: #555555;
+}
+
+.service .service__header {
   margin-top: 100px;
   text-align: center;
 }
 
-.section__header .section__header__title {
+.service .service__header .service__header__title {
   font-family: "Montserrat" sans-serif;
   font-size: 20px;
-  color: #555555;
   text-transform: uppercase;
 }
 
-.section__header .section__header__title:after {
+.service .service__header .service__header__title:after {
   content: "";
   display: block;
   width: 50px;
@@ -116,12 +117,25 @@ li {
   background-color: #555555;
 }
 
-.section__header .section__header__subTitle {
+.service .service__header .service__header__subTitle {
   font-family: "Roboto Slab" sans-serif;
   font-size: 16px;
 }
 
-.section__service {
+.service .service__content {
   margin-top: 72px;
+}
+
+.service .service__content .service__content__item {
+  display: block;
+  max-width: 366px;
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto Slab" sans-serif;
+  font-size: 14px;
+}
+
+.service .service__content .service__content__item h4 {
+  margin: 28px 0;
 }
 /*# sourceMappingURL=style.css.map */
