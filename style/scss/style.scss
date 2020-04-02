@@ -27,7 +27,7 @@ $main__color: #555555;
       a {
         text-decoration: none;
         color: $header__intro__color;
-        font-family: "Montserrat" sans-serif;
+        font-family: "Montserrat", sans-serif;
       }
     }
   }
@@ -43,7 +43,7 @@ $main__color: #555555;
     margin-bottom: 10px;
   }
   .intro_subtitle {
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", sans-serif;
     font-size: 20px;
     margin-bottom: 50px;
   }
@@ -66,9 +66,8 @@ $main__color: #555555;
     margin-top: 100px;
     text-align: center;
     .service__header__title {
-      font-family: "Montserrat" sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 20px;
-      // color: #555555;
       text-transform: uppercase;
     }
     .service__header__title:after {
@@ -80,7 +79,7 @@ $main__color: #555555;
       background-color: #555555;
     }
     .service__header__subTitle {
-      font-family: "Roboto Slab" sans-serif;
+      font-family: "Roboto Slab", sans-serif;
       font-size: 16px;
     }
   }
@@ -91,11 +90,39 @@ $main__color: #555555;
       max-width: 366px;
       width: 100%;
       text-align: center;
-      font-family: "Roboto Slab" sans-serif;
+      font-family: "Roboto Slab", sans-serif;
       font-size: 14px;
       h4 {
         margin: 28px 0;
       }
+    }
+  }
+}
+
+.about {
+  color: $main__color;
+  background-color: #f8f8f8;
+  margin-top: 70px;
+  .about__header {
+    margin-top: 100px;
+    text-align: center;
+    .about__header__title {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    .about__header__title:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      margin: 30px auto;
+      background-color: #555555;
+    }
+    .about__header__subTitle {
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 16px;
+      margin-bottom: 70px;
     }
   }
 }

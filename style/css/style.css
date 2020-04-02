@@ -59,7 +59,7 @@ li {
 .header .header__menu .header__menu__item a {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .intro {
@@ -75,7 +75,7 @@ li {
 }
 
 .intro .intro_subtitle {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", sans-serif;
   font-size: 20px;
   margin-bottom: 50px;
 }
@@ -103,7 +103,7 @@ li {
 }
 
 .service .service__header .service__header__title {
-  font-family: "Montserrat" sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
 }
@@ -118,7 +118,7 @@ li {
 }
 
 .service .service__header .service__header__subTitle {
-  font-family: "Roboto Slab" sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 16px;
 }
 
@@ -131,11 +131,43 @@ li {
   max-width: 366px;
   width: 100%;
   text-align: center;
-  font-family: "Roboto Slab" sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 14px;
 }
 
 .service .service__content .service__content__item h4 {
   margin: 28px 0;
+}
+
+.about {
+  color: #555555;
+  background-color: #f8f8f8;
+  margin-top: 70px;
+}
+
+.about .about__header {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.about .about__header .about__header__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.about .about__header .about__header__title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 30px auto;
+  background-color: #555555;
+}
+
+.about .about__header .about__header__subTitle {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  margin-bottom: 70px;
 }
 /*# sourceMappingURL=style.css.map */
