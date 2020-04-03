@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -28,6 +28,12 @@ li {
   margin: 0;
 }
 
+.service .service__header .service__header__title, .about .about__header .about__header__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .container-fluid {
   background: url("../../images/Home_01.jpg") center no-repeat;
   background-size: cover;
@@ -45,6 +51,7 @@ li {
 .header .header__logo {
   font-size: 24px;
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
 }
 
@@ -69,13 +76,13 @@ li {
 }
 
 .intro .intro__title {
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
 .intro .intro_subtitle {
-  font-family: "Roboto Slab", sans-serif;
   font-size: 20px;
   margin-bottom: 50px;
 }
@@ -89,6 +96,7 @@ li {
 }
 
 .intro .intro__pseudoButton:hover {
+  font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
   color: #c0301c;
 }
@@ -102,12 +110,6 @@ li {
   text-align: center;
 }
 
-.service .service__header .service__header__title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
 .service .service__header .service__header__title:after {
   content: "";
   display: block;
@@ -118,12 +120,11 @@ li {
 }
 
 .service .service__header .service__header__subTitle {
-  font-family: "Roboto Slab", sans-serif;
   font-size: 16px;
 }
 
 .service .service__content {
-  margin-top: 72px;
+  margin-top: 70px;
 }
 
 .service .service__content .service__content__item {
@@ -131,7 +132,6 @@ li {
   max-width: 366px;
   width: 100%;
   text-align: center;
-  font-family: "Roboto Slab", sans-serif;
   font-size: 14px;
 }
 
@@ -150,12 +150,6 @@ li {
   text-align: center;
 }
 
-.about .about__header .about__header__title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
 .about .about__header .about__header__title:after {
   content: "";
   display: block;
@@ -166,8 +160,10 @@ li {
 }
 
 .about .about__header .about__header__subTitle {
-  font-family: "Roboto Slab", sans-serif;
   font-size: 16px;
-  margin-bottom: 70px;
+}
+
+.about .about__content {
+  margin: 70px 0 0 10px;
 }
 /*# sourceMappingURL=style.css.map */
