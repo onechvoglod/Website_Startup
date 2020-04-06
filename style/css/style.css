@@ -7,9 +7,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
+  font: 14px/23x "Roboto Slab", sans-serif;
 }
 
 h1,
@@ -41,7 +39,7 @@ li {
 
 .container {
   max-width: 1170px;
-  padding: 0;
+  padding: 15;
 }
 
 .header {
@@ -164,6 +162,6 @@ li {
 }
 
 .about .about__content {
-  margin: 70px 0 0 10px;
+  margin: 70px 0 50px;
 }
 /*# sourceMappingURL=style.css.map */
