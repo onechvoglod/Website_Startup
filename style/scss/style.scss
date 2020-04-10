@@ -16,7 +16,6 @@ $main__color: #555555;
 
 .container {
   max-width: 1170px;
-  padding: 15;
 }
 
 .header {
@@ -27,9 +26,9 @@ $main__color: #555555;
     font-family: "Montserrat", sans-serif;
     color: $header__intro__color;
   }
-  .header__menu {
+  .header__nav {
     list-style-type: none;
-    .header__menu__item {
+    .header__nav__item {
       padding: 0 15px;
       a {
         text-decoration: none;
@@ -44,6 +43,10 @@ $main__color: #555555;
   text-align: center;
   height: 700px;
   color: $header__intro__color;
+  a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+  }
   .intro__title {
     font-family: "Montserrat", sans-serif;
     font-size: 48px;
@@ -65,6 +68,7 @@ $main__color: #555555;
     font-family: "Montserrat", sans-serif;
     background-color: #ffffff;
     color: #c0301c;
+    text-decoration: none;
   }
 }
 
@@ -129,4 +133,74 @@ $main__color: #555555;
   .about__content {
     margin: 70px 0 50px;
   }
+}
+
+.carousel {
+  margin-bottom: 70px;
+}
+.carousel-item {
+  .col-md-3 {
+    max-width: 263px;
+    padding: 0;
+    margin-left: 5px;
+  }
+  .col-md-3:first-child {
+    margin-left: 0;
+  }
+}
+
+.carousel__item__img {
+  background-color: grey;
+  position: relative;
+}
+
+.carousel__item__link {
+  width: 98px;
+  position: absolute;
+  left: 50%;
+  margin-left: -54px;
+  top: 78%;
+  a {
+    padding: 0 5px;
+    color: #ffffff;
+    display: none;
+  }
+  a:hover {
+    background-color: #c0301c;
+    transition: 0.2s linear;
+  }
+}
+
+.carousel__inner img {
+  transition: opacity 0.2s linear;
+}
+
+.carousel__inner:hover img {
+  opacity: 0.6;
+}
+
+.carousel__inner:hover .carousel__item__link a {
+  display: inline-block;
+}
+
+.carusel-button {
+  background-color: #c0301c;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-decoration: none;
+  color: #dddddd;
+  text-align: center;
+  padding: 0 6px;
+  font-family: "Montserrat", sans-serif;
+}
+.carusel-button.right {
+  right: 0;
+}
+
+a.carusel-button:active,
+a.carusel-button:hover,
+a.carusel-button {
+  text-decoration: none;
+  color: #dddddd;
 }

@@ -39,7 +39,6 @@ li {
 
 .container {
   max-width: 1170px;
-  padding: 15;
 }
 
 .header {
@@ -53,15 +52,15 @@ li {
   color: #ffffff;
 }
 
-.header .header__menu {
+.header .header__nav {
   list-style-type: none;
 }
 
-.header .header__menu .header__menu__item {
+.header .header__nav .header__nav__item {
   padding: 0 15px;
 }
 
-.header .header__menu .header__menu__item a {
+.header .header__nav .header__nav__item a {
   text-decoration: none;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -71,6 +70,11 @@ li {
   text-align: center;
   height: 700px;
   color: #ffffff;
+}
+
+.intro a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 .intro .intro__title {
@@ -97,6 +101,7 @@ li {
   font-family: "Montserrat", sans-serif;
   background-color: #ffffff;
   color: #c0301c;
+  text-decoration: none;
 }
 
 .service {
@@ -163,5 +168,81 @@ li {
 
 .about .about__content {
   margin: 70px 0 50px;
+}
+
+.carousel {
+  margin-bottom: 70px;
+}
+
+.carousel-item .col-md-3 {
+  max-width: 263px;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.carousel-item .col-md-3:first-child {
+  margin-left: 0;
+}
+
+.carousel__item__img {
+  background-color: grey;
+  position: relative;
+}
+
+.carousel__item__link {
+  width: 98px;
+  position: absolute;
+  left: 50%;
+  margin-left: -54px;
+  top: 78%;
+}
+
+.carousel__item__link a {
+  padding: 0 5px;
+  color: #ffffff;
+  display: none;
+}
+
+.carousel__item__link a:hover {
+  background-color: #c0301c;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.carousel__inner img {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.carousel__inner:hover img {
+  opacity: 0.6;
+}
+
+.carousel__inner:hover .carousel__item__link a {
+  display: inline-block;
+}
+
+.carusel-button {
+  background-color: #c0301c;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  text-decoration: none;
+  color: #dddddd;
+  text-align: center;
+  padding: 0 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.carusel-button.right {
+  right: 0;
+}
+
+a.carusel-button:active,
+a.carusel-button:hover,
+a.carusel-button {
+  text-decoration: none;
+  color: #dddddd;
 }
 /*# sourceMappingURL=style.css.map */

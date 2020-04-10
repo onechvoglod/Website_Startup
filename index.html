@@ -8,6 +8,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style/css/style.css" />
     <title>Startup</title>
   </head>
@@ -21,14 +25,14 @@
             </div>
             <div class="col-auto align-self-center">
               <nav>
-                <ul class="header__menu d-flex">
-                  <li class="header__menu__item"><a href="#">Home</a></li>
-                  <li class="header__menu__item"><a href="#">Servises</a></li>
-                  <li class="header__menu__item"><a href="#">About</a></li>
-                  <li class="header__menu__item"><a href="#">Works</a></li>
-                  <li class="header__menu__item"><a href="#">Blog</a></li>
-                  <li class="header__menu__item"><a href="#">Clients</a></li>
-                  <li class="header__menu__item"><a href="#">Contact</a></li>
+                <ul class="header__nav d-flex">
+                  <li class="header__nav__item"><a href="#">Home</a></li>
+                  <li class="header__nav__item"><a href="#">Servises</a></li>
+                  <li class="header__nav__item"><a href="#">About</a></li>
+                  <li class="header__nav__item"><a href="#">Works</a></li>
+                  <li class="header__nav__item"><a href="#">Blog</a></li>
+                  <li class="header__nav__item"><a href="#">Clients</a></li>
+                  <li class="header__nav__item"><a href="#">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -58,8 +62,8 @@
           </div>
         </div>
         <div class="service__content">
-          <div class="row justify-content-center">
-            <div class="col-auto">
+          <div class="row d-flex justify-content-between">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
               <div class="service__content__item">
                 <img
                   class="mx-auto d-block"
@@ -73,7 +77,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
               <div class="service__content__item">
                 <img
                   class="mx-auto d-block"
@@ -87,7 +91,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
               <div class="service__content__item">
                 <img
                   class="mx-auto d-block"
@@ -141,94 +145,287 @@
             </div>
           </div>
         </div>
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-between">
-                <div class="slider__item">
-                  <div class="slider__item__img">
-                    <img
-                      src="/images/Avatar_01.jpg"
-                      class="img-fluid"
-                      alt="Avatar_01"
-                    />
+        <div clas="row carousel-main">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-between">
+                  <div class="col-md-3">
+                    <div class="carousel__inner">
+                      <div class="carousel__item__img">
+                        <img
+                          src="/images/Avatar_01.jpg"
+                          class="img-fluid"
+                          alt="Avatar_01"
+                        />
+                      </div>
+                      <ul class="d-flex carousel__item__link">
+                        <li>
+                          <a href="https://www.facebook.com"
+                            ><i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com.ua"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com"
+                            ><i class="fa fa-linkedin"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="carousel__inner">
+                      <div class="carousel__item__img">
+                        <img
+                          src="/images/Avatar_02.jpg"
+                          class="img-fluid"
+                          alt="Avatar_02"
+                        />
+                      </div>
+                      <ul class="d-flex carousel__item__link">
+                        <li>
+                          <a href="https://www.facebook.com"
+                            ><i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com.ua"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com"
+                            ><i class="fa fa-linkedin"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="carousel__inner">
+                      <div class="carousel__item__img">
+                        <img
+                          src="/images/Avatar_03.jpg"
+                          class="img-fluid"
+                          alt="Avatar_03.jpg"
+                        />
+                      </div>
+                      <ul class="d-flex carousel__item__link">
+                        <li>
+                          <a href="https://www.facebook.com"
+                            ><i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com.ua"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com"
+                            ><i class="fa fa-linkedin"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="carousel__inner">
+                      <div class="carousel__item__img">
+                        <img
+                          src="/images/Avatar_04.jpg"
+                          class="img-fluid"
+                          alt="Avatar_04"
+                        />
+                      </div>
+                      <ul class="d-flex carousel__item__link">
+                        <li>
+                          <a href="https://www.facebook.com"
+                            ><i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com.ua"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com"
+                            ><i class="fa fa-linkedin"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <div class="slider__item">
-                  <div class="slider__item__img">
-                    <img
-                      src="/images/Avatar_02.jpg"
-                      class="img-fluid"
-                      alt="Avatar_02"
-                    />
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-between">
+                  <div class="col-md-3">
+                    <div class="carousel__inner">
+                      <div class="carousel__item__img">
+                        <img
+                          src="/images/Avatar_01.jpg"
+                          class="img-fluid"
+                          alt="Avatar_01"
+                        />
+                      </div>
+                      <ul class="d-flex carousel__item__link">
+                        <li>
+                          <a href="https://www.facebook.com"
+                            ><i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com.ua"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com"
+                            ><i class="fa fa-linkedin"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item__img">
-                    <img
-                      src="/images/Avatar_03.jpg"
-                      class="img-fluid"
-                      alt="Avatar_03.jpg"
-                    />
+                  <div class="col-md-3">
+                    <div class="carousel__inner">
+                      <div class="carousel__item__img">
+                        <img
+                          src="/images/Avatar_02.jpg"
+                          class="img-fluid"
+                          alt="Avatar_02"
+                        />
+                      </div>
+                      <ul class="d-flex carousel__item__link">
+                        <li>
+                          <a href="https://www.facebook.com"
+                            ><i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com.ua"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com"
+                            ><i class="fa fa-linkedin"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item__img">
-                    <img
-                      src="/images/Avatar_04.jpg"
-                      class="img-fluid"
-                      alt="Avatar_04"
-                    />
+                  <div class="col-md-3">
+                    <div class="carousel__inner">
+                      <div class="carousel__item__img">
+                        <img
+                          src="/images/Avatar_03.jpg"
+                          class="img-fluid"
+                          alt="Avatar_03.jpg"
+                        />
+                      </div>
+                      <ul class="d-flex carousel__item__link">
+                        <li>
+                          <a href="https://www.facebook.com"
+                            ><i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com.ua"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com"
+                            ><i class="fa fa-linkedin"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="carousel__inner">
+                      <div class="carousel__item__img">
+                        <img
+                          src="/images/Avatar_04.jpg"
+                          class="img-fluid"
+                          alt="Avatar_04"
+                        />
+                      </div>
+                      <ul class="d-flex carousel__item__link">
+                        <li>
+                          <a href="https://www.facebook.com"
+                            ><i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com"
+                            ><i class="fa fa-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.google.com.ua"
+                            ><i class="fa fa-google-plus"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com"
+                            ><i class="fa fa-linkedin"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-between">
-                <div class="slider__item">
-                  <div class="slider__item__img">
-                    <img
-                      src="/images/Avatar_01.jpg"
-                      class="img-fluid"
-                      alt="Avatar_01"
-                    />
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item__img">
-                    <img
-                      src="/images/Avatar_02.jpg"
-                      class="img-fluid"
-                      alt="Avatar_02"
-                    />
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item__img">
-                    <img
-                      src="/images/Avatar_03.jpg"
-                      class="img-fluid"
-                      alt="Avatar_03.jpg"
-                    />
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__item__img">
-                    <img
-                      src="/images/Avatar_04.jpg"
-                      class="img-fluid"
-                      alt="Avatar_04"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
+            <!-- <a
             class="carousel-control-prev"
             href="#carouselExampleControls"
             role="button"
@@ -245,7 +442,23 @@
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a>
+          </a> -->
+
+            <a
+              class="carusel-button"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="prev"
+              ><i class="fa fa-angle-left"></i
+            ></a>
+            <a
+              class="carusel-button right"
+              href="#carouselExampleControls"
+              role="button"
+              data-slide="next"
+              ><i class="fa fa-angle-right"></i
+            ></a>
+          </div>
         </div>
       </div>
     </section>
