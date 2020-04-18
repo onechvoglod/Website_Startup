@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="style/bootstrap/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="style/css/style.css" />
     <title>Startup</title>
@@ -44,7 +45,7 @@
             <h3 class="intro_subtitle">
               Your Favourite Creative Agency Template
             </h3>
-            <a class="intro__pseudoButton">Get started</a>
+            <a href="#" class="intro__pseudoButton">Get started</a>
           </div>
         </div>
       </div>
@@ -145,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div clas="row carousel-main">
+        <div clas="row">
           <div
             id="carouselExampleControls"
             class="carousel slide"
@@ -158,8 +159,8 @@
                     <div class="carousel__inner">
                       <div class="carousel__item__img">
                         <img
-                          src="/images/Avatar_01.jpg"
-                          class="img-fluid"
+                          src="./images/Avatar_01.jpg"
+                          class="d-block w-100"
                           alt="Avatar_01"
                         />
                       </div>
@@ -191,8 +192,8 @@
                     <div class="carousel__inner">
                       <div class="carousel__item__img">
                         <img
-                          src="/images/Avatar_02.jpg"
-                          class="img-fluid"
+                          src="./images/Avatar_02.jpg"
+                          class="d-block w-100"
                           alt="Avatar_02"
                         />
                       </div>
@@ -224,8 +225,8 @@
                     <div class="carousel__inner">
                       <div class="carousel__item__img">
                         <img
-                          src="/images/Avatar_03.jpg"
-                          class="img-fluid"
+                          src="./images/Avatar_03.jpg"
+                          class="d-block w-100"
                           alt="Avatar_03.jpg"
                         />
                       </div>
@@ -257,8 +258,8 @@
                     <div class="carousel__inner">
                       <div class="carousel__item__img">
                         <img
-                          src="/images/Avatar_04.jpg"
-                          class="img-fluid"
+                          src="./images/Avatar_04.jpg"
+                          class="d-block w-100"
                           alt="Avatar_04"
                         />
                       </div>
@@ -294,8 +295,8 @@
                     <div class="carousel__inner">
                       <div class="carousel__item__img">
                         <img
-                          src="/images/Avatar_01.jpg"
-                          class="img-fluid"
+                          src="./images/Avatar_01.jpg"
+                          class="d-block w-100"
                           alt="Avatar_01"
                         />
                       </div>
@@ -327,8 +328,8 @@
                     <div class="carousel__inner">
                       <div class="carousel__item__img">
                         <img
-                          src="/images/Avatar_02.jpg"
-                          class="img-fluid"
+                          src="./images/Avatar_02.jpg"
+                          class="d-block w-100"
                           alt="Avatar_02"
                         />
                       </div>
@@ -360,8 +361,8 @@
                     <div class="carousel__inner">
                       <div class="carousel__item__img">
                         <img
-                          src="/images/Avatar_03.jpg"
-                          class="img-fluid"
+                          src="./images/Avatar_03.jpg"
+                          class="d-block w-100"
                           alt="Avatar_03.jpg"
                         />
                       </div>
@@ -393,8 +394,8 @@
                     <div class="carousel__inner">
                       <div class="carousel__item__img">
                         <img
-                          src="/images/Avatar_04.jpg"
-                          class="img-fluid"
+                          src="./images/Avatar_04.jpg"
+                          class="d-block w-100"
                           alt="Avatar_04"
                         />
                       </div>
@@ -425,39 +426,153 @@
                 </div>
               </div>
             </div>
-            <!-- <a
-            class="carousel-control-prev"
-            href="#carouselExampleControls"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleControls"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a> -->
-
             <a
-              class="carusel-button"
+              class="carousel-button"
               href="#carouselExampleControls"
               role="button"
               data-slide="prev"
               ><i class="fa fa-angle-left"></i
             ></a>
             <a
-              class="carusel-button right"
+              class="carousel-button right"
               href="#carouselExampleControls"
               role="button"
               data-slide="next"
               ><i class="fa fa-angle-right"></i
             ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="works__header">
+              <h3 class="works__header__title">Latest Works</h3>
+              <ul class="works__nav d-flex">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Developmen</a></li>
+                <li><a href="#">Strategy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_01.png" alt="work" />
+
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_02.png" alt="work" />
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_03.png" alt="work" />
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_04.png" alt="work" />
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_05.png" alt="work" />
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_06.png" alt="work" />
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_07.png" alt="work" />
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_08.png" alt="work" />
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="works__item">
+              <img class="img-fluid" src="./images/work_09.png" alt="work" />
+              <div class="works__item__inner">
+                <h5 class="works__item__title">Hair Dresser</h5>
+                <h6>Branding</h6>
+                <a href="#" class="works__item__pseudoButton"
+                  >View <i class="fa fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

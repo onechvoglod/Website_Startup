@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  font: 14px/23x "Roboto Slab", sans-serif;
+  font: 14px/23px "Roboto Slab", sans-serif;
 }
 
 h1,
@@ -26,7 +26,7 @@ li {
   margin: 0;
 }
 
-.service .service__header .service__header__title, .about .about__header .about__header__title {
+.service .service__header .service__header__title, .about .about__header .about__header__title, .works .works__header__title {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
@@ -66,6 +66,10 @@ li {
   font-family: "Montserrat", sans-serif;
 }
 
+.header .header__nav .header__nav__item a:hover {
+  font-weight: 700;
+}
+
 .intro {
   text-align: center;
   height: 700px;
@@ -95,13 +99,14 @@ li {
   padding: 12px 36px;
   border: 2px solid #ffffff;
   border-radius: 3px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .intro .intro__pseudoButton:hover {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   background-color: #ffffff;
   color: #c0301c;
-  text-decoration: none;
 }
 
 .service {
@@ -146,6 +151,7 @@ li {
   color: #555555;
   background-color: #f8f8f8;
   margin-top: 70px;
+  padding-bottom: 70px;
 }
 
 .about .about__header {
@@ -170,14 +176,10 @@ li {
   margin: 70px 0 50px;
 }
 
-.carousel {
-  margin-bottom: 70px;
-}
-
 .carousel-item .col-md-3 {
   max-width: 263px;
-  padding: 0;
   margin-left: 5px;
+  padding: 0;
 }
 
 .carousel-item .col-md-3:first-child {
@@ -222,7 +224,7 @@ li {
   display: inline-block;
 }
 
-.carusel-button {
+.carousel-button {
   background-color: #c0301c;
   position: absolute;
   top: 50%;
@@ -235,14 +237,106 @@ li {
   font-family: "Montserrat", sans-serif;
 }
 
-.carusel-button.right {
+.carousel-button.right {
   right: 0;
 }
 
-a.carusel-button:active,
-a.carusel-button:hover,
-a.carusel-button {
+a.carousel-button:active,
+a.carousel-button:hover,
+a.carousel-button {
   text-decoration: none;
   color: #dddddd;
+}
+
+.works {
+  color: #555555;
+  margin-top: 70px;
+}
+
+.works .works__item {
+  background-color: #c0301c;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.works .works__item:hover .works__item__inner {
+  display: block;
+}
+
+.works .works__item .works__item__inner {
+  display: none;
+  position: absolute;
+  width: 112px;
+  left: 50%;
+  margin-left: -55px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.works .works__item .works__item__inner .works__item__pseudoButton {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  padding: 5px 10px;
+  margin-top: 5px;
+  font: 14px "Roboto Slab", sans-serif;
+}
+
+.works .works__item .works__item__inner .works__item__pseudoButton:hover {
+  background-color: #ffffff;
+  color: #c0301c;
+}
+
+.works .works__item .works__item__inner h5 {
+  font: 18px "Montserrat", sans-serif;
+}
+
+.works .works__item .works__item__inner h6 {
+  font: 12px "Roboto Slab", sans-serif;
+  margin: 10px 0;
+}
+
+.works .works__header__title {
+  text-align: center;
+}
+
+.works .works__header__title:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 30px auto;
+  background-color: #555555;
+}
+
+.works__nav {
+  margin-bottom: 60px;
+}
+
+.works__nav li {
+  padding: 0 12px;
+}
+
+.works__nav li a {
+  text-decoration: none;
+  color: #555555;
+}
+
+.works__nav li a:hover {
+  color: #c0301c;
+}
+
+.works__item:hover img {
+  opacity: 0.3;
+}
+
+.works__item img {
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 /*# sourceMappingURL=style.css.map */
