@@ -68,6 +68,16 @@ li {
 
 .header .header__nav .header__nav__item a:hover {
   font-weight: 700;
+  color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+}
+
+.nav-link::hover {
+  color: #fff;
 }
 
 .intro {

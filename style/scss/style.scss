@@ -36,12 +36,20 @@ $main__color: #555555;
         font-family: "Montserrat", sans-serif;
         &:hover {
           font-weight: 700;
+          color: #fff;
         }
       }
     }
   }
 }
 
+.navbar-light .navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+}
+.nav-link::hover {
+  color: #fff;
+}
 .intro {
   text-align: center;
   height: 700px;
